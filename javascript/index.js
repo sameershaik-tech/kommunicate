@@ -1,11 +1,6 @@
-let rev = 0;
-let num = 123456;
-let lastDigit;
-
-while(num != 0){
-	lastDigit = num % 10;
-  rev = rev * 10 + lastDigit;
-  num = Math.floor(num/10);
+function reverse_a_number(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
 }
-
-document.write("Reverse number : "+rev);
+console.log(Number(reverse_a_number(32243)));
